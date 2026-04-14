@@ -2,7 +2,7 @@
 # Programa cliente que lee tiempos de vuelta de un archivo
 # e imprime la racha decreciente mas larga.
 
-import lap timer
+import lap_timer
 
 def main():
     # TODO: Pedir el nombre del archivo al usuario usando input()
@@ -15,7 +15,10 @@ def main():
     return timer
 }
     # TODO: Abrir el archivo y leer el numero de vueltas n
-    
+    with open("ejemplo.txt", "r") as lap_timer
+    # operaciones con el archivo
+    # no necesitas close() 
+
     # TODO: Crear el cronometro usando lap_timer.init(n)
     
     # TODO: Leer los n tiempos de vuelta y agregarlos con lap_timer.add_lap()
