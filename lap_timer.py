@@ -11,7 +11,7 @@ def init(max_laps):
     """
     Crea y retorna un diccionario para almacenar hasta max_laps vueltas.
     """
-    # TODO: Implementar
+    # TODO:
 
     timer = {
     "max": max_laps,
@@ -26,7 +26,7 @@ def add_lap(timer, time):
     Agrega una nueva vuelta con el tiempo especificado.
     Retorna el diccionario modificado.
     """
-    # TODO: Implementar
+    # TODO: 
 
     timer["times"].append(time)
     timer["total"] += time
@@ -37,7 +37,7 @@ def count(timer):
     """
     Retorna el numero de vueltas agregadas.
     """
-    # TODO: Implementar
+    # TODO: 
     return len(timer["times"])
 
 
@@ -53,7 +53,7 @@ def format_laps(timer):
     Retorna una representacion en cadena de los tiempos.
     Formato: [t1, t2, t3, ..., tn]
     """
-    # TODO: Implementar
+    # TODO: 
 
     return str(timer["times"])
 
@@ -61,7 +61,7 @@ def fastest_lap(timer):
     """
     Retorna el tiempo mas rapido de cualquier vuelta.
     """
-    # TODO: Implementar
+    # TODO: 
 
     return min(timer["times"])
 
@@ -69,7 +69,7 @@ def fastest_multi_lap(timer, k):
     """
     Retorna el tiempo acumulado mas rapido de cualquier k vueltas consecutivas.
     """
-    # TODO: Implementar
+    # TODO: 
     
 times = timer["times"]
 min_sum = sum(times[0:k])
@@ -78,16 +78,15 @@ for i in range(len(times) - k + 1):
     current_sum = sum(times[i:i+k])
     if current_sum < min_sum:
         min_sum = current_sum
-
-return min_sum 
+        return min_sum 
 
 def longest_decreasing_streak(timer):
     """
     Retorna la longitud maxima de una secuencia de vueltas consecutivas
     donde los tiempos disminuyen estrictamente.
     """
-    # TODO: Implementar
-
+    # TODO:
+timer = 
 times = timer["times"]
 
 max_streak = 1
@@ -101,8 +100,8 @@ for i in range(1, len(times)):
     
     if current_streak > max_streak:
         max_streak = current_streak
-
-return max_streak
+        
+    return max_streak
 
 def main():
     # crear un cronometro para el record mundial de 100m de Usain Bolt,
