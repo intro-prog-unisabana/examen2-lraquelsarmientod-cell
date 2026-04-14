@@ -31,6 +31,7 @@ def add_lap(timer, time):
     timer["times"].append(time)
     timer["total"] += time
     return timer
+for i in range total
 
 
 def count(timer):
@@ -76,9 +77,9 @@ min_sum = sum(times[0:k])
 
 for i in range(len(times) - k + 1):
     current_sum = sum(times[i:i+k])
-    if current_sum < min_sum:
-        min_sum = current_sum
-        return min_sum 
+if current_sum < min_sum:
+    min_sum = current_sum
+    return min_sum 
 
 def longest_decreasing_streak(timer):
     """
@@ -86,7 +87,7 @@ def longest_decreasing_streak(timer):
     donde los tiempos disminuyen estrictamente.
     """
     # TODO:
-timer = 
+timer =
 times = timer["times"]
 
 max_streak = 1
