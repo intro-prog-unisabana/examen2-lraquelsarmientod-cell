@@ -94,7 +94,8 @@ def longest_decreasing_streak(timer):
     donde los tiempos disminuyen estrictamente.
     """
     # TODO:
-def longest_decreasing_streak(timer):
+
+   def longest_decreasing_streak(timer):
     times = timer["times"]
 
     max_streak = 1
