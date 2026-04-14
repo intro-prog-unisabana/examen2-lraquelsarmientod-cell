@@ -30,7 +30,7 @@ def add_lap(timer, time):
 
     timer["times"].append(time)
     timer["total"] += time
-return timer
+    return timer
 
 
 def count(timer):
@@ -38,7 +38,6 @@ def count(timer):
     Retorna el numero de vueltas agregadas.
     """
     # TODO: Implementar
-
     return len(timer["times"])
 
 
@@ -47,7 +46,6 @@ def cumulative_time(timer):
     Retorna el tiempo acumulado de todas las vueltas.
     """
     # TODO: 
-    
     return timer["total"]
 
 def format_laps(timer):
@@ -57,7 +55,7 @@ def format_laps(timer):
     """
     # TODO: Implementar
 
-return str(timer["times"])
+    return str(timer["times"])
 
 def fastest_lap(timer):
     """
@@ -65,7 +63,7 @@ def fastest_lap(timer):
     """
     # TODO: Implementar
 
-return min(timer["times"])
+    return min(timer["times"])
 
 def fastest_multi_lap(timer, k):
     """
@@ -90,7 +88,21 @@ def longest_decreasing_streak(timer):
     """
     # TODO: Implementar
 
+times = timer["times"]
 
+max_streak = 1
+current_streak = 1
+
+for i in range(1, len(times)):
+    if times[i] < times[i - 1]:
+        current_streak += 1
+    else:
+        current_streak = 1
+    
+    if current_streak > max_streak:
+        max_streak = current_streak
+
+return max_streak
 
 def main():
     # crear un cronometro para el record mundial de 100m de Usain Bolt,
