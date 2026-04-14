@@ -6,6 +6,7 @@ import lap timer
 
 def main():
     # TODO: Pedir el nombre del archivo al usuario usando input()
+    input("Nombre del archivo")
         lap_timer.init = {
     "max": max_laps,
     "times": [],
