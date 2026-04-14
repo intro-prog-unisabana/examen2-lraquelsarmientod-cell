@@ -31,7 +31,6 @@ def add_lap(timer, time):
     timer["times"].append(time)
     timer["total"] += time
     return timer
-for i in range total
 
 
 def count(timer):
